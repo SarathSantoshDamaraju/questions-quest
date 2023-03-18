@@ -139,3 +139,20 @@ nav {
     @apply bg-day bg-opacity-90 dark:bg-night dark:bg-opacity-90;
   }
 }
+
+.tag-container {
+  display: flex;
+  width: 80%;
+  overflow-x: scroll;
+  gap: 8px;
+}
+
+.tag-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tag-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
